@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Survey Form
+	</title>
+</head>
+
+<body>
+    <h2 class="heading"> Survey Form </h2>
+    <form id="form">
+        <fieldset>
+            <legend> Personal details</legend>
+            <div class="main-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name"required >
+            </div>
+            <div class="main-container">
+                <label for="email">Email Id</label>
+                <input type="email" id="email" placeholder="Enter your Email" >
+                
+            </div>
+
+            <div class="sub-container">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" >
+                    <option value="select">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Prefer not to say</option>
+                </select>
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="date" placeholder="Select your date">
+            </div>
+
+            <div class="sub-container">
+                <p>Please select your Highest Education:
+                <select name="degree" id="degree"></p>
+                    <option value="select">Select</option>
+                    <option value="phd">Ph.D. </option>
+                    <option value="msc">Masters</option>
+                    <option value="bsc">Bachelors</option>
+                    <option value="mba">MBA</option>
+                    <option value="undergraduate">Under Graduate</option>
+                </select>
+            </div>        
+        </fieldset>
+        
+        <fieldset>
+            <legend>Health details</legend>
+            <div class="second-container">
+                <p>On a scale of 1 to 5, how healthy do you consider yourself ? </p>
+                    <label for="scale"></label><input type="number" value="0" min="0" max="5" >
+            </div>
+
+            <div class="second-container">
+                <p>Do you have any herediatary conditions or diseases ?<br>
+                <input type="checkbox" id="healthissue" name="issue" value="heart">
+                <label for="heart_desease">Heart Diseases</label><br>
+                <input type="checkbox" id="bp" name="issue">
+                <label for="bloodpressure">High Blood Pressure</label><br>
+                <input type="checkbox" id="diabetes" name="issue">
+                <label for="diabetes">Diabetes</label><br>
+                <input type="checkbox" id="cancer" name="issue">
+                <label for="cancer">Cancer</label></p>
+            </div>
+
+            <div class="second-container">
+                <p>Are you habituated to drugs and alcohol ?<br>
+                <input type="checkbox" id="drugs" name="habit">
+                <label for="drugs">Only to drugs</label><br>
+                <input type="checkbox" id="alcohol" name="habit">
+                <label for="alcohol">Only to alcohol</label><br>
+                <input type="checkbox" id="yes" name="habit" value="Yes to Both">
+                <label for="yes-to-both">Yes to Both</label><br>
+                <input type="checkbox" id="no" name="no">
+                <label for="no">I am not habituated to either</label></p>
+            </div>
+
+            <div class="second-container">
+                <p>How often do you get a health checkups?<br>
+                <input type="radio" id="three" name="checkup" value="Once in a three months">
+                <label for="three">Once in a three months</label><br>
+                <input type="radio" id="six" name="checkup" value="Once in a six months">
+                <label for="six">Once in a six months</label><br>
+                <input type="radio" id="year" name="checkup" value="Once in a year">
+                <label for="year">Once in a year</label><br>
+                <input type="radio" id="never" name="checkup" value="Never get its done">
+                <label for="never">Never get its done</label></p>           
+            </div> 
+
+            <div class="second-container"><p>Please share your comments on excercise.</p>
+                <label for="comments" aria-placeholder="Your comments here"></label>
+                <textarea id="comments" name="comments" rows="5" cols="45">
+                </textarea>              
+            </div>
+               
+        </fieldset>
+        <div class="wrapper">
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
