@@ -13,30 +13,32 @@
 </head>
 
 <body>
-    <h2 class="heading"> Survey Form </h2>
+    <h1 class="heading"> Survey Form </h1>
     <form id="form">
         <fieldset>
-            <legend> Personal details</legend>
+            <legend><h3>Personal details</h3></legend>
             <div class="main-container">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name"required >
+                <label for="name">Name :</label>
+                <input type="text" id="name" placeholder="Enter your name"required style="text-transform: capitalize;">
             </div>
             <div class="main-container">
-                <label for="email">Email Id</label>
+                <label for="email">Email :</label>
                 <input type="email" id="email" placeholder="Enter your Email" >
-                
             </div>
 
             <div class="sub-container">
-                <label for="gender">Gender:</label>
+                <label for="gender">Gender :</label>
                 <select name="gender" id="gender" >
                     <option value="select">Select</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Prefer not to say</option>
                 </select>
-                    <label for="birthdate">Birthdate:</label>
-                    <input type="date" id="date" placeholder="Select your date">
+            </div>
+
+            <div class="sub-container">
+                <label for="birthdate">Birthdate :</label>
+                <input type="date" id="date" placeholder="Select your date">
             </div>
 
             <div class="sub-container">
@@ -53,7 +55,7 @@
         </fieldset>
         
         <fieldset>
-            <legend>Health details</legend>
+            <legend><h3>Health details</h3></legend>
             <div class="second-container">
                 <p>On a scale of 1 to 5, how healthy do you consider yourself ? </p>
                     <label for="scale"></label><input type="number" value="0" min="0" max="5" >
